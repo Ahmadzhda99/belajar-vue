@@ -1,11 +1,15 @@
 import {createRouter, createWebHistory} from 'vue-router'
-import Dashboard from '../views/Dashboard.vue'
-import Profil from '../views/Profil.vue'
+import Dashboard from '../views/admin/Dashboard.vue'
+import Profil from '../views/admin/Profil.vue'
+import HelloWorld from '../components/HelloWorld.vue'
 
 const appTitle = 'HelloWorld App'
 
 const routes = [
-	{ path: '/', redirect: 'dashboard'}, 
+	{
+		path: '/', 
+		component: HelloWorld,
+	}, 
 	{
 		path: '/dashboard',
 		component: Dashboard,
