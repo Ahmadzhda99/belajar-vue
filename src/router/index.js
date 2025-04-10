@@ -27,7 +27,7 @@ const routes = [
 ]
 
 const router = createRouter({
-	history: createWebHistory(),
+	history: createWebHistory(), /* tambahkan '/dir/subdir/' jika masuk ke folder. kosongi jika berada di root.*/
 	routes
 })
 
