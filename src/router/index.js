@@ -9,6 +9,7 @@ const routes = [
 	{
 		path: '/', 
 		component: HelloWorld,
+		props: { msg: 'Hello, World!' },
 	}, 
 	{
 		path: '/dashboard',
